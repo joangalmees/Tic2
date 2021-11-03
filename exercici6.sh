@@ -6,19 +6,20 @@ if [ $nombre1 -gt $nombre2 ]; then
 echo "El primer es més gran que el segon"
 fi
 if [ $nombre2 -gt $nombre1 ]; then
-echo "El segon és més gran que el segon"
+echo "El segon és més gran que el primer"
 fi
 
 echo "Escriu un nombre"
 read nombre1
 echo "Escriu un altre nombre"
+let res=$nombre1*2
 read nombre2
-if [ $nombre1 -gt $nombre2 ]; then
+if [ $res -gt $nombre2 ]; then
 echo "El primer es més gran que el segon"
 fi
-if [ $nombre2 -gt $nombre1 ]; then
-echo "El segon és més gran que el segon"
-fi
+if [ $nombre2 -gt $res ]; then
+echo "El segon és més gran que el primer"
+fi 
 
 echo "Escriu un nombre de 0 a 100"
 read nombre1
