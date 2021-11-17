@@ -3,7 +3,7 @@ nSecret2=$((RANDOM%21))
 echo "Digues el teu nom:"
 read nom
 echo "Els números secrets són $nSecret1 i $nSecret2"
-if [ $nSecret1 -gt $nSecret2 ]; then
+if [ $nSecret1 -t $nSecret2 ]; then
 echo "$nSecret1 és major que $nSecret2"
 fi
 if [ $nSecret2 -gt $nSecret1 ]; then
