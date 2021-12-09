@@ -1,0 +1,7 @@
+#!/bin/sh
+# Joan Galmés Fluxà
+echo What is your name?
+read MY_NAME
+echo "I will create you a file called ${USER_NAME}_file"
+touch ${USER_NAME}_file
+
